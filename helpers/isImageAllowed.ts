@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  images: {
-    domains: [
+export const isImageAllowed = (url: string): boolean => {
+  try {
+    const domain = new URL(url).hostname;
+    return [
       "media.cnn.com",
       "image.cnbcfm.com",
       "variety.com",
@@ -51,8 +51,8 @@ const nextConfig: NextConfig = {
       "cdn.arstechnica.net",
       "cdn.mos.cms.futurecdn.net",
       "npr.brightspotcdn.com"
-    ],
-  },
+    ].includes(domain);
+  } catch {
+    return false;
+  }
 };
-
-export default nextConfig;
