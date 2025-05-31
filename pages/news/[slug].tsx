@@ -1,4 +1,3 @@
-
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { getNewsDetailPaths, getNewsDetailProps } from '../../server/getNewsDetailPageProps';
