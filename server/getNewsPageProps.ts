@@ -1,6 +1,6 @@
-import { GetServerSideProps } from "next";
-import { getNews } from "../helpers/getNews";
-import { NewsCategory } from "../dto/NewsCategory";
+import { GetServerSideProps } from 'next';
+import { getNews } from '../helpers/getNews';
+import { NewsCategory } from '../dto/NewsCategory';
 import { HomePagePropsDto } from '../dto/HomePageProps.dto';
 
 export const getNewsPageProps: GetServerSideProps<HomePagePropsDto> = async (context) => {
