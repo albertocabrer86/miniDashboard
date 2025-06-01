@@ -10,9 +10,6 @@ const getCategoryLabel = (value: string): string => {
   return NewsCategories.find(cat => cat.value === value)?.label || value;
 };
 
-const initialCount = 10;
-const loadStep = 10;
-
 const HomePage: NextPage = () => {
     const { category } = useCategory();//Hook para obtener las cotegorias
     const { loading, visibleNews, loadMore:handleLoadMore, canLoadMore: showLoadMore } = useNews(category);
