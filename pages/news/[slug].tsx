@@ -18,7 +18,7 @@ const NewsDetailPage = ({ article }: NewsDetailPageDto) => {
     <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
       <button
         onClick={() => router.back()}
-        className= "button"
+        className="button"
       >
         ← Home
       </button>
