@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo } from 'react';
 import NewsItem from './NewsItem';
 import { NewsListPropsDto } from '../dto/NewsListProps.dto';
 

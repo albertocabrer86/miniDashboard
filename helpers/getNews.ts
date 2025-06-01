@@ -45,7 +45,7 @@ export async function getNews(options: GetNewsOptionsDto = {}): Promise<NewsItem
                 const sourceName = source?.name?.trim() || 'Fuente desconocida';
                 const slugText = `${title}-${sourceName}`;
                 return {
-                    slug: slugify(slugText),
+                    slug: slugify(slugText),//fn para devolver el slug creado a partir del texto
                     title,
                     description,
                     url,

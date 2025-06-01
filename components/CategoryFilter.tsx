@@ -1,5 +1,5 @@
 import { NewsCategories } from '../dto/NewsCategory';
-import { useCategory } from '../context/CategoryContext';
+import { useCategory } from '../hooks/useCategory';
 
 const CategoryFilter = () => {
   const { category, setCategory } = useCategory();
